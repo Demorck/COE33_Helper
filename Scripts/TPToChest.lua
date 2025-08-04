@@ -1,6 +1,6 @@
 JSON = require("json")
 
-local file = JSON.read_file("F:/Project/UE4SS/Expedition 33/Mods/COE33_Helper/Scripts/data/data.json") -- JUST CHANGE THIS
+local file = JSON.read_file("F:/Project/UE4SS/Expedition 33/Mods/COE33_Helper/Scripts/data/chests.json") -- JUST CHANGE THIS
 local current_level = ""
 local current_data_in_area = {}
 local current_names_in_area = {}
