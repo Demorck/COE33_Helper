@@ -19,6 +19,14 @@ function TP()
         for key, value in pairs(current_data_in_area) do
             table.insert(current_names_in_area, key)
         end
+
+        table.sort(current_names_in_area, function(a, b)
+            local numA = tonumber(a:match("_(%d+)$")) or math.huge
+            local numB = tonumber(b:match("_(%d+)$")) or math.huge
+            return numA < numB
+        end)
+
+
         tp_index = 1
     end
     
